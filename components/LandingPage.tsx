@@ -1,3 +1,4 @@
+'use client';
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
 import { FaQrcode } from "react-icons/fa";
@@ -92,8 +93,11 @@ export default function LandingPage() {
             </p>
           </div>
           </div>
-          <button id="signup" className="block mx-auto my-6 bg-white py-5 px-10 rounded-3xl text-xl text-teal-800 font-bold">Get started</button>
-
+          <Link href="/signup">
+          <button className="block mx-auto my-6 bg-white py-5 px-10 rounded-3xl text-xl text-teal-800 font-bold transition">
+            Sign Up
+          </button>
+        </Link>
           <div id="contact" className="flex items-center justify-center">
             <p className="text-3xl font-bold">Contact Us:</p>
        <div className="flex"><FaFacebook size={30} style={{ margin: '10px'}}/> <FaInstagram size={30} style={{ margin: '10px'}}/> <FaTwitter size={30} style={{ margin: '10px'}}/></div>
