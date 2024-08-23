@@ -12,4 +12,83 @@ input {
 
 nav ul li a{
   @apply w-[200px] px-6 py-3 mx-6 font-bold bg-gray-300 rounded-lg hover:bg-white hover:border-4 hover:border-teal-500
+  
 }
+
+@media screen and (max-width: 970px) {
+nav ul li a{
+  @apply w-[150px] mx-2 px-3
+}
+
+.feature{
+  @apply gap-20 mx-8
+}
+  
+}
+
+@media screen and (max-width: 855px) {
+  .feature{
+    @apply gap-16 mx-6
+  }
+    
+}
+
+@media screen and (max-width: 855px) {
+  .feature{
+    @apply gap-8 mx-2
+  }
+    
+}
+
+@media screen and (max-width: 695px) {
+  .header{
+    @apply flex-col
+  }
+
+  .scissor{
+    @apply mb-6
+  }
+  .feature{
+    @apply flex-col
+  }
+    
+  .bgimage{
+    @apply mx-12
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .breadcrumb {
+    @apply block
+  }
+  nav ul li a{
+    @apply w-[200px] my-6 px-8 block text-center
+  }
+  .bgimage{
+    @apply mx-6
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .bgimage{
+    @apply mx-3
+  }
+
+  .input{
+    @apply w-[270px] 
+  }
+
+  .inputbutton{
+    @apply w-[30]
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .description{
+    @apply w-[72] px-4 text-center
+  }
+  .shortener{
+    @apply text-3xl
+  }
+}
+

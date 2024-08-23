@@ -10,12 +10,12 @@ import { FaTwitter } from "react-icons/fa";
 export default function LandingPage() {
   return (
     <div className="flex flex-col mx-6">
-        <header className="flex items-center justify-between mx-4 my-8">
+        <header className="header flex items-center justify-between mx-4 my-8">
           <div>
-            <h1 className="text-2xl font-black italic ">Scissor</h1>
+            <h1 className="scissor text-2xl font-black italic ">Scissor</h1>
           </div>
           <nav>
-            <ul className="flex justify-between">
+            <ul className="breadcrumb flex justify-between">
               <li>
                 <Link href="#features">Features</Link>
               </li>
@@ -34,12 +34,12 @@ export default function LandingPage() {
             </ul>
           </nav>
         </header>
-        <div className="flex flex-col items-center  justify-center w-400 h-screen my-12 mx-20  bg-[url('/url_shortener.JPG')] rounded-lg bg-cover bg-center">
-          <h1 className="text-5xl font-bold font-black pb-4">URL Shortener</h1>
+        <div className="bgimage flex flex-col items-center  justify-center w-400 h-screen my-12 mx-20  bg-[url('/url_shortener.JPG')] rounded-lg bg-cover bg-center">
+          <h1 className="shortener text-5xl font-bold font-black pb-4">URL Shortener</h1>
           <p className="font-bold text-lg pb-7">Paste your link below to shorten it</p>
           <div className="relative">
-            <input type="url" className="h-14 bg-white"/>
-            <button className="w-50 py-2 px-3 rounded-lg text-white font-bold absolute bottom-2 right-2 bg-teal-500">Shorten</button>
+            <input type="url" className="input h-14 bg-white"/>
+            <button className="inputbutton w-50 py-2 px-3 rounded-lg text-white font-bold absolute bottom-2 right-2 bg-teal-500">Shorten</button>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ export default function LandingPage() {
           <h2 className="text-teal-800 font-bold text-3xl mb-2">
             A simple but powerful tool for <span className="text-teal-400">Everyone</span>.
           </h2>
-          <p className="w-96 text-lg text-teal-800 font-bold">
+          <p className="description w-96 text-lg text-teal-800 font-bold">
             With the help of this tool, you can effortlessly track your audience
             with short, memorable yet powerful URLs, and give your clients a
             distinctive, personalized experience.
@@ -61,7 +61,7 @@ export default function LandingPage() {
               -What We Offer
             </h1>
           </div>
-          <div className="flex items-center justify-between gap-32 mx-16">
+          <div className="feature flex items-center justify-between gap-32 mx-16">
           <div className="p-5 bg-white rounded-2xl mb-4">
             <div className="flex">
               <FaLink size={30}/><h1 className="font-bold text-2xl pb-3 pl-4">Custom URLs</h1></div>
