@@ -1,3 +1,4 @@
+import { signup } from './actions'
 import Link from "next/link"
 
 export default function SignUp () {
@@ -13,7 +14,7 @@ export default function SignUp () {
             <input type="password" placeholder="Password"/>
             <button className=" w-200  bg-teal-600 text-white font-bold cursor-pointer px-6 py-3 rounded-md">Register</button>
 
-            <Link className="text-sm underline mt-8 text-right" href={"/"}>Already have an account?   <span className="underline font-bold text-orange-800">Login</span></Link>
+            <Link className="text-sm underline mt-8 text-right" href={"/LogInPage"}>Already have an account?   <span className="underline font-bold text-orange-800">Login</span></Link>
         </form>
         </div>
     </div>

@@ -94,7 +94,7 @@ export default function LandingPage() {
           </div>
           </div>
           <Link href="/signup">
-          <button className="block mx-auto my-6 bg-white py-5 px-10 rounded-3xl text-xl text-teal-800 font-bold transition">
+          <button id="signup" className="block mx-auto my-6 bg-white py-5 px-10 rounded-3xl text-xl text-teal-800 font-bold transition">
             Sign Up
           </button>
         </Link>
